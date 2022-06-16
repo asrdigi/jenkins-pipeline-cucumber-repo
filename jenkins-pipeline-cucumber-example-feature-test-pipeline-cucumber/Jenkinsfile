@@ -8,7 +8,7 @@ pipeline{
 
             steps {
 
-                    sh 'mvn -f jenkins-pipeline-cucumber-example-feature-test-pipeline-cucumber/pom.xml clean install'
+                 bat script: 'mvn -f jenkins-pipeline-cucumber-example-feature-test-pipeline-cucumber/pom.xml clean install'
 
 
             }
@@ -18,7 +18,7 @@ pipeline{
             steps {
 
 
-                    sh 'mvn -f jenkins-pipeline-cucumber-example-feature-test-pipeline-cucumber/pom.xml test'
+                    bat script: 'mvn -f jenkins-pipeline-cucumber-example-feature-test-pipeline-cucumber/pom.xml test'
 
 
             }
